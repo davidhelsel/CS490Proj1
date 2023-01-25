@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="ljY-w8-hB0">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Goku-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="MyStory" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="fWB-Dd-gZR">
+                                <rect key="frame" x="83" y="103" width="226" height="296.33333333333331"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="goku" translatesAutoresizingMaskIntoConstraints="NO" id="Q0v-ku-J7W">
+                                        <rect key="frame" x="0.0" y="0.0" width="226" height="127"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="226" id="bWv-Od-RIB"/>
+                                            <constraint firstAttribute="height" constant="127" id="xDW-Ta-rfu"/>
+                                        </constraints>
+                                    </imageView>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pQp-KR-BS9">
+                                        <rect key="frame" x="49.666666666666664" y="135" width="126.66666666666669" height="34.333333333333343"/>
+                                        <gestureRecognizers/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="My backstory"/>
+                                        <connections>
+                                            <outletCollection property="gestureRecognizers" destination="XzF-IF-g1Z" appends="YES" id="GtK-K7-t3B"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dQx-mB-YHI">
+                                        <rect key="frame" x="36" y="177.33333333333331" width="154.33333333333334" height="34.333333333333343"/>
+                                        <gestureRecognizers/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="My special ability"/>
+                                        <connections>
+                                            <outletCollection property="gestureRecognizers" destination="sCo-rP-QdV" appends="YES" id="bf2-DA-WkO"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kpz-LX-CXJ">
+                                        <rect key="frame" x="64.666666666666657" y="219.66666666666669" width="97" height="34.333333333333343"/>
+                                        <gestureRecognizers/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="What I do"/>
+                                        <connections>
+                                            <outletCollection property="gestureRecognizers" destination="oy5-J5-vTL" appends="YES" id="Jp1-Tr-PDS"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1Qo-o6-nCo">
+                                        <rect key="frame" x="31.666666666666671" y="262" width="162.66666666666663" height="34.333333333333314"/>
+                                        <gestureRecognizers/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="My greatest battle"/>
+                                        <connections>
+                                            <outletCollection property="gestureRecognizers" destination="awF-Nx-1Kh" appends="YES" id="Sik-o3-KXD"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="fWB-Dd-gZR" secondAttribute="trailing" constant="84" id="Mpw-2c-NR2"/>
+                            <constraint firstItem="fWB-Dd-gZR" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="83" id="qHH-9i-YfG"/>
+                            <constraint firstItem="fWB-Dd-gZR" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="ra1-0S-42H"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Goku" id="mKc-Rn-lbm"/>
+                    <connections>
+                        <segue destination="vkd-VL-FTQ" kind="show" identifier="detailSegue" id="zBQ-WB-iLz"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="XzF-IF-g1Z">
+                    <connections>
+                        <action selector="didTapButton:" destination="BYZ-38-t0r" id="qIM-Ad-SEk"/>
+                    </connections>
+                </tapGestureRecognizer>
+                <tapGestureRecognizer id="sCo-rP-QdV">
+                    <connections>
+                        <action selector="didTapButton:" destination="BYZ-38-t0r" id="nAY-5I-Wf3"/>
+                    </connections>
+                </tapGestureRecognizer>
+                <tapGestureRecognizer id="oy5-J5-vTL">
+                    <connections>
+                        <action selector="didTapButton:" destination="BYZ-38-t0r" id="DuR-d2-2c2"/>
+                    </connections>
+                </tapGestureRecognizer>
+                <tapGestureRecognizer id="awF-Nx-1Kh">
+                    <connections>
+                        <action selector="didTapButton:" destination="BYZ-38-t0r" id="rSM-tK-lKH"/>
+                    </connections>
+                </tapGestureRecognizer>
+            </objects>
+            <point key="canvasLocation" x="973.28244274809151" y="-2.1126760563380285"/>
+        </scene>
+        <!--Title-->
+        <scene sceneID="coN-lp-Z4I">
+            <objects>
+                <viewController id="vkd-VL-FTQ" customClass="DetailViewController" customModule="MyStory" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="S7I-o7-0Vw">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="top" axis="vertical" distribution="equalSpacing" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="LOA-wx-zpt">
+                                <rect key="frame" x="50" y="119.00000000000001" width="293" height="178.33333333333337"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalCompressionResistancePriority="751" verticalCompressionResistancePriority="751" translatesAutoresizingMaskIntoConstraints="NO" id="G5e-Hl-cyS">
+                                        <rect key="frame" x="0.0" y="0.0" width="293" height="150"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="150" id="kwq-aK-Yeg"/>
+                                            <constraint firstAttribute="width" constant="150" id="zM8-5f-flF"/>
+                                        </constraints>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" minimumFontSize="9" translatesAutoresizingMaskIntoConstraints="NO" id="v20-Ca-8lQ">
+                                        <rect key="frame" x="0.0" y="158" width="293" height="20.333333333333343"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="H0c-jA-lHR"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="LOA-wx-zpt" firstAttribute="leading" secondItem="H0c-jA-lHR" secondAttribute="leading" constant="50" id="LT4-yB-xk1"/>
+                            <constraint firstItem="LOA-wx-zpt" firstAttribute="top" secondItem="H0c-jA-lHR" secondAttribute="top" constant="16" id="WSl-45-v2t"/>
+                            <constraint firstItem="H0c-jA-lHR" firstAttribute="trailing" secondItem="LOA-wx-zpt" secondAttribute="trailing" constant="50" id="g1r-Ap-BEa"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Title" id="RPh-Rj-sMV"/>
+                    <connections>
+                        <outlet property="screenImage" destination="G5e-Hl-cyS" id="gRT-qh-jUV"/>
+                        <outlet property="screenText" destination="v20-Ca-8lQ" id="QcF-21-HWW"/>
+                        <outlet property="titleScreen" destination="RPh-Rj-sMV" id="gfa-Ba-fik"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="egh-QJ-9vR" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1669.4656488549617" y="11.971830985915494"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="6Fs-II-7lW">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="ljY-w8-hB0" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="scS-Qz-7MH">
+                        <rect key="frame" x="0.0" y="59" width="393" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="pEd-xh-2y8"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="9q0-Bq-glD" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="46.564885496183201" y="-2.1126760563380285"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="goku" width="226" height="127"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
